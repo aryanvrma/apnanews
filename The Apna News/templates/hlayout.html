@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
+
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <title>ApnaNews</title>
+        <link rel="icon" type="image/png" href="{{url_for('static', filename='favicon.ico')}}">
+    </head>
+    <!--[if IE 6 ]><body class="ie6 old_ie"><![endif]-->
+    <!--[if IE 7 ]><body class="ie7 old_ie"><![endif]-->
+    <!--[if IE 8 ]><body class="ie8"><![endif]-->
+    <!--[if IE 9 ]><body class="ie9"><![endif]-->
+    <!--[if !IE]><!--><body><!--<![endif]-->
+		<header style="height:60px">
+            <h1><a href="/">Apna News</a><span id="version"><h4 style="padding-top: 25px; font-size: 12px; padding-left: 0px;">Apna News Apne Pas</h4></span></h1>
+			<nav>
+                <!--<li><a href="/biharnews">Bihar </a></li>
+                <li><a href="/hindi/science">विज्ञान</a></li>
+            <li><a href="/hindi/tech">Tech</a></li>-->
+                <ul class="list" style="padding-left: 270px;bottom: 5px;">
+                    
+                    <li style="font-size: 15px;"><a href="/hindi">भारत</a></li>
+                    <li><a href="/hindi/world">विश्व</a></li>
+                    <li><a href="/hindi/buissness">व्यापार</a></li>
+                    
+                    <li><a href="/hindi/sports">खेल</a></li>
+                    
+                    <div class="dropdown">
+                        <form action="">
+                        <button class="dropbtn" style="background-color: black; padding: 0px;">भाषा
+                            <i class="fa fa-caret-down"></i>
+                          </button>
+                          <div class="dropdown-content">
+                            <a href="/" name="hindi">english</a>
+                            <a href="/hindi" name="hindi">hindi</a>
+                          </div>
+                      </div>
+                    </form>
+                    
+                    <!--<li><a href="/rashifal">Rashifal/Horoscope</a></li>-->
+                          		
+                </ul>
+               
+            </nav>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+            
+        </header>
+        
+		<div id="adbanner">
+			<div id="ad">
+				<a href="#"><p>Advertise Here</p></a>
+			</div>
+        </div>
+        
+    {% block body %} {% endblock %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+</section>
+</div>
+
+<footer>
+    <p  style="float: right; padding-left: 20px;">Developed And Managed By - Arya-N Web Solution</p>
+</footer>
+</body>
+</html>

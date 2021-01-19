@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block body %}        
+		
+		<div id="secwrapper" style="padding-left: 68px;">
+			<!--<a href="/buissness" style="position: sticky;float: left;"><img src="url_for('static',filename='f04b9c2e-ccdc-4003-b8ff-793698f5a4a2.png')}}"></a>-->
+
+			<section>
+				
+				{% for titleV,linkV,d,summaryV in data %}
+				<article id="featured" style="margin: 5px;">
+					<a href="/article" target="_self" style=" text-decoration: none;color: black;"><img src="{{d}}" style="height: 180px;width: 280px;"  alt="images" id="">
+					<h1 style="" ><strong>{{titleV}}</strong></h1><br>
+					<p><h4>{{summaryV}}</h4></p>
+					<p></p></a>
+					<a href="/article" target="_self" class="readmore">Read more</a>					
+					</article>
+				{% endfor %}
+				
+				
+				<article id="sponsors">
+					<h1>Sponsors</h1>
+					<a href="#"><p>Advertise here</p></a><a href="#"><p>Advertise here</p></a><a href="#"><p>Advertise here</p></a><a href="#"><p>Advertise here</p></a>
+				</article>
+				
+				<article id="photobox">
+					<h1></h1>
+					<p></p>
+					<img src="{{url_for('static', filename='images/pbs1.jpg')}}" alt="" /><img src="{{url_for('static', filename='images/pbs2.jpg')}}" alt="" /><img src="{{url_for('static', filename='images/pbs3.jpg')}}" alt="" />
+					<img src="{{url_for('static', filename='images/pbs4.jpg')}}" alt="" /><img src="{{url_for('static', filename='images/pbs5.jpg')}}" alt="" /><img src="{{url_for('static', filename='images/pbs6.jpg')}}" alt="" />
+					<img src="{{url_for('static', filename='images/pbs7.jpg')}}" alt="" />
+				</article>
+				
+				
+				<article id="sponsors">
+					<h1>Sponsors</h1>
+					<a href="#"><p>Advertise here</p></a><a href="#"><p>Advertise here</p></a><a href="#"><p>Advertise here</p></a><a href="#"><p>Advertise here</p></a>
+				</article>
+				
+				
+			{% endblock %}
